@@ -3,18 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>GammaGoose</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style type="text/css">
+
+        .b-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h1 class="mt-5">Hello, World!</h1>
-                <p class="lead">Welcome to GammaGoose.</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">GammaGoose</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid" id="home" style="background-image: url('images/classroom.jpg'); background-size: cover; background-position: center; color: white; background-color: rgba(0, 0, 0, 0.5);">
+        <div style="background-color: rgba(0, 0, 0, 0.5);" class="py-5" title="Photo by Pixabay: https://www.pexels.com/photo/white-wooden-rectangular-table-159213/">
+            <div class="container text-center">
+                <h1 class="display-4">Welcome to GammaGoose – The Smart Way to Enroll Students</h1>
+                <p class="lead">Simplify Class Enrollment for Schools, Districts, and After-School Programs</p>
+                <hr class="my-4">
+                <p>GammaGoose makes it easier than ever to create, manage, and enroll students in classes. Whether you're a large school district, a small independent after-school program, or anything in between, we’ve got you covered.</p>
+                <a href="#" class="btn btn-primary">Get Started</a>
             </div>
         </div>
     </div>
+
+    <div class="container py-4" id="about">
+        <h1 class="text-center">What is GammaGoose?</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="images/teacher.jpg" class="img-fluid" alt="Photo by fauxels: https://www.pexels.com/photo/man-in-beige-blazer-holding-tablet-computer-3184328/">
+            </div>
+            <div class="col-md-4">
+                <p>GammaGoose is an intuitive, user-friendly platform designed to streamline class enrollment. Parents can easily browse and enroll their children in classes, while educational providers can manage offerings, track student enrollment, and communicate seamlessly – all in one place.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <p>Our platform is designed to be flexible and adaptable to your needs. Whether you're a school district, an after-school program, or a community education provider, GammaGoose can help you save time, reduce administrative burden, and improve the overall enrollment experience for parents and students.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/students.jpg" class="img-fluid" alt="Photo by Stanley Morales: https://www.pexels.com/photo/people-wearing-backpacks-1454360/">
+            </div>
+        </div>
+    </div>
+
+    <div class="b-divider"></div>
+
+    <div class="jumbotron jumbotron-fluid" style="background-image: url('images/classroom2.jpg'); background-size: cover; background-position: center; color: white; background-color: rgba(0, 0, 0, 0.5);">
+        <div class="container mt-4 py-5">
+            
+        </div>
+    </div>
+
+    <div class="container" id="choose">
+        <h1 class="text-center">Why Choose GammaGoose?</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1><i class="bi bi-building"></i></h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <h2>For Large School Districts</h2>
+                        <p class="text-left">GammaGoose can handle large volumes of students, simplifying the enrollment process across multiple schools. Create courses, set schedules, and manage registrations effortlessly.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1><i class="bi bi-people"></i></h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <h2>For Independent After-School Programs</h2>
+                        <p class="text-left">Running an after-school program? GammaGoose lets you set up class offerings, manage registrations, and track attendance with ease.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1><i class="bi bi-database"></i></h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <h2>Flexible & Scalable</h2>
+                        <p class="text-left">From single classes to entire districts, our platform scales with your needs. Whether it’s a seasonal after-school workshop or a year-round academic offering, GammaGoose adapts to your requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-divider"></div>
+
+    <div class="container mt-5 py-5" id="features">
+        <h1 class="text-center">GammaGoose Features</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Effortless Course Creation</h5>
+                        <p class="card-text">Quickly set up new classes, from elementary to advanced levels, with all the details parents and students need to know.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Easy Enrollment for Parents/Students</h5>
+                        <p class="card-text">Parents/Students can browse available courses, view schedules, and enroll with just a few clicks – no paperwork required!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Comprehensive Reporting & Tracking</h5>
+                        <p class="card-text">GammaGoose offers robust reporting tools so you can track enrollments, student progress, and much more in real time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Secure & Compliant</h5>
+                        <p class="card-text">We prioritize security and compliance with educational regulations, ensuring all data is handled securely and responsibly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="b-divider"></div>
+
+
+    <div class="container mt-5 py-5" id="how-it-works">
+        <h1 class="text-center">How GammaGoose Works</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="images/computer-create.jpg" class="img-fluid" alt="Photo by Antoni Shkraba: https://www.pexels.com/photo/photo-of-person-using-laptop-for-graphic-designs-4348404/" style="border-radius: 10px;">
+            </div>
+            <div class="col-md-6">
+                <h2><i class="bi bi-file-earmark-plus-fill"></i> Create Your Classes</h2>
+                <p>Set up courses with all the necessary details: class times, descriptions, and instructor information.</p>
+                <h2><i class="bi bi-person-plus-fill"></i> Publish & Share</h2>
+                <p>Once your classes are set up, parents can browse through your offerings and select the right fit for their children.</p>
+                <h2><i class="bi bi-clipboard-data-fill"></i> Track Progress</h2>
+                <p>Easily view who’s enrolled, manage waiting lists, and communicate with parents directly through the platform.</p>
+                <h2><i class="bi bi-credit-card-fill"></i> Seamless Payment & Registration (if applicable)</h2>
+                <p>Parents can pay for and complete their child’s enrollment online with no hassle.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-divider"></div>
+
+    <div class="container mt-5 py-5" id="pricing">
+        <h1 class="text-center">Pricing</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title
+                        ">Basic</h5>
+                        <p class="card-text">Perfect for small programs or individual instructors.</p>
+                        <h2 class="text-center">$29.99/month</h2>
+                        <a href="#" class="btn btn-primary btn-block">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard</h5>
+                        <p class="card-text">Ideal for schools and larger programs.</p>
+                        <a href="#" class="btn btn-primary btn-block">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium</h5>
+                        <p class="card-text">For districts and organizations with complex needs.</p>
+                        <a href="#" class="btn btn-primary btn-block">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-divider"></div>
+
+    <div class="container mt-5 py-5" id="get-started">
+        <h1 class="text-center">Get Started with GammaGoose</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>Ready to Simplify Your Enrollment Process?</h2>
+                <p>Whether you're managing a school district or an independent after-school program, GammaGoose provides the tools you need to make enrollment smooth, efficient, and stress-free.</p>
+                <p>Sign Up Today and Transform Your Enrollment Process!</p>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="b-divider"></div>
+
+    <div class="container mt-5 py-5" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>Get in Touch</h2>
+                <p>Have questions about GammaGoose? Want to learn more about our platform? Contact us today!</p>
+                <a href="https://oakworks.io/contact-us/" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; <script>document.write(/\d{4}/.exec(Date())[0])</script> Oakworks Software, LLC. All rights reserved.</p>
+    </footer>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
