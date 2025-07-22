@@ -101,6 +101,10 @@
             background-size: cover;
             color: white;
         }
+        .nav-item:hover {
+            background-color: #e49515 !important;
+            border-radius: 5px;
+        }
 
     </style>
 </head>
@@ -116,16 +120,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-white" aria-current="page" href="#"><i class="bi bi-house-fill"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#features">Features</a>
+                        <a class="nav-link text-white" href="#features"><i class="bi bi-star-fill"></i> Features</a>
                     </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link text-white" href="#pricing">Pricing</a>
-                    </li>-->
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="#contact">Get Started <i class="bi bi-plus-circle-fill"></i></a>
+                        <a class="nav-link text-white" href="#pricing"><i class="bi bi-currency-dollar"></i> Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#comparison"><i class="bi bi-arrow-left-right"></i> Compare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="https://app.oakworks.io/gammagoose/get-started/">Get Started <i class="bi bi-plus-circle-fill"></i></a>
                     </li>
                 </ul>
             </div>
@@ -139,7 +146,7 @@
                 <p class="lead">Simplify Class Enrollment for Schools, Districts, and After-School Programs</p>
                 <hr class="my-4">
                 <p>GammaGoose makes it easier than ever to create, manage, and enroll students in classes. Whether you're a large school district, a small independent after-school program, or anything in between, we’ve got you covered.</p>
-                <a href="#contact" class="btn btn-os-orange btn-lg">Get Started <i class="bi bi-plus-circle-fill"></i></a>
+                <a href="https://app.oakworks.io/gammagoose/get-started/" class="btn btn-os-orange btn-lg">Get Started <i class="bi bi-plus-circle-fill"></i></a>
             </div>
         </div>
     </div>
@@ -342,7 +349,7 @@
                             </ul>
                         </div>
                         <div class="card-footer text-body-secondary d-flex flex-column">
-                            <button type="button" class="mt-auto btn btn-lg btn-block btn-success">Sign up for <i class="bi bi-stars text-warning"></i> &dollar;119</button>
+                            <a href="https://app.oakworks.io/gammagoose/get-started/hatchling" class="mt-auto btn btn-lg btn-block btn-success w-100">Sign up for <i class="bi bi-stars text-warning"></i> &dollar;119</a>
                         </div>
                     </div>
                 </div>
@@ -379,7 +386,7 @@
                             </ul>
                         </div>
                         <div class="card-footer text-body-secondary d-flex flex-column">
-                            <button type="button" class="mt-auto btn btn-lg btn-block btn-success">Sign up for <i class="bi bi-stars text-warning"></i> &dollar;299</button>
+                            <a href="https://app.oakworks.io/gammagoose/get-started/gosling" class="mt-auto btn btn-lg btn-block btn-success w-100">Sign up for <i class="bi bi-stars text-warning"></i> &dollar;299</a>
                         </div>
                     </div>
                 </div>
@@ -415,7 +422,9 @@
                                 <li class="list-group-item"><i class="bi bi-headset"></i> Premium Support &amp; Training</li>
                                 <li class="list-group-item"><i class="bi bi-person-raised-hand"></i> Help center access</li>
                             </ul>
-                            <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><i class="bi bi-person-fill-add"></i> Request Quote</button>
+                        </div>
+                        <div class="card-footer text-body-secondary d-flex flex-column">
+                            <a href="https://app.oakworks.io/gammagoose/get-started/gaggle" class="mt-auto btn btn-lg btn-block btn-primary w-100"><i class="bi bi-person-fill-add"></i> Request Quote</a>
                         </div>
                     </div>
                 </div>
@@ -636,7 +645,7 @@
                                 <tfoot>
                                     <tr class="border-none m-0 p-0">
                                         <td>&nbsp;</td>
-                                        <td class="p-0"><div class="rounded-bottom p-3 bg-os-orange"><a href="#contact" class="btn btn-primary text-white w-100">Get Started <i class="bi bi-plus-circle-fill"></i></a></div></td>
+                                        <td class="p-0"><div class="rounded-bottom p-3 bg-os-orange"><a href="https://app.oakworks.io/gammagoose/get-started/" class="btn btn-primary text-white w-100">Get Started <i class="bi bi-plus-circle-fill"></i></a></div></td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
@@ -669,72 +678,9 @@
                 <p>Sign Up Today and Transform Your Enrollment Process!</p>
 
                 <div class="row">
-                    <form action="https://app.oakworks.io/api/get-started" method="post" id="get-started-form"></form>
-                        <div class="col-12">Tell us about your needs:</div>
-                        <div class="col-12">
-                            <div class="mb-3">
-                                <label for="organization-type" class="form-label">Organization Type</label>
-                                <select class="form-select" id="organization-type" name="organization-type">
-                                    <option value="">Select Organization Type</option>
-                                    <option value="school">School</option>
-                                    <option value="district">School District</option>
-                                    <option value="afterschool">Independent After-School Program</option>
-                                    <option value="tutor">Tutor</option>
-                                    <option value="non-profit">Non-Profit Organization</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="organization-size" class="form-label">Student Count</label>
-                                <select class="form-select" id="organization-size" name="organization-size">
-                                    <option value="">Select Student Count</option>
-                                    <option value="1-250">1-250 Students</option>
-                                    <option value="251-2000">251-2000 Students</option>
-                                    <option value="2001">2001+ Students</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="locations" class="form-label">Number of Locations</label>
-                                <input type="number" class="form-control" id="locations" name="locations" placeholder="Enter number of locations" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="courses" class="form-label">Number of Courses</label>
-                                <input type="number" class="form-control" id="courses" name="courses" placeholder="Enter number of courses" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="vendors" class="form-label">Number of Vendors</label>
-                                <input type="number" class="form-control" id="vendors" name="vendors" placeholder="Enter number of vendors" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Your Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="role" class="form-label">Your Role</label>
-                                <select class="form-select" id="role" name="role">
-                                    <option value="">Select Your Role</option>
-                                    <option value="admin">Administrator</option>
-                                    <option value="teacher">Teacher</option>
-                                    <option value="parent">Parent</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="comments" class="form-label">Additional Comments</label>
-                                <textarea class="form-control" id="comments" name="comments" rows="3" placeholder="Any specific requirements or questions?"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <div class="cf-turnstile" data-sitekey="0x4AAAAAAA6nqL4FLWDyoJ1o"></div>
-                            </div>
-                            <div class="mb-3 d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button type="submit" class="btn btn-lg btn-primary">Submit <i class="bi bi-send-check-fill"></i></button>
-                            </div>
-                        </div>
-                    </form>
+                    <div class="col-12">
+                        <a href="https://app.oakworks.io/gammagoose/get-started/" class="btn btn-primary btn-lg text-white">Get Started <i class="bi bi-plus-circle-fill"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
