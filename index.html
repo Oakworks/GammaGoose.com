@@ -61,6 +61,10 @@
         .bg-os-grey {
             background-color: #65717f;
         }
+        .bg-os-orange {
+            background-color: #e49515 !important;
+            color: white !important;
+        }
         @font-face {
             font-family: 'Brandmark1-Bold';
             src: url('fonts/Brandmark1-Bold.otf');
@@ -81,6 +85,21 @@
         .btn-os-orange:hover {
             background-color: #d48e14;
             border-color: #d48e14;
+        }
+        .old-price {
+            text-decoration: line-through;
+            text-decoration-color: crimson;
+            color: #6c757d;
+        }
+        h1.new-price {
+            font-size: 3rem;
+        }
+        div.bg-banner {
+            background-image: url('images/Banner.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
         }
 
     </style>
@@ -279,72 +298,124 @@
 
     <div class="b-divider"></div>
 
-    <!--<div class="container-fluid mt-5 py-5 bg-secondary" id="pricing">
+    <div class="container-fluid py-5 bg-secondary" id="pricing">
         <div class="container">
             <h1 class="text-center text-white">Pricing</h1>
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <p class="text-center text-white">Choose the plan that best fits your needs. All plans are billed annually and include access to our help center and standard email support.</p>
+                </div>
+            </div>
             <div class="row mb-3 text-center">
                 <div class="col-sm-12 col-md-4">
                     <div class="card mb-4 box-shadow border-primary border-opacity-50">
                         <div class="card-header text-white bg-primary">
-                            <h4 class="my-0 font-weight-normal">Basic</h4>
+                            <h4 class="my-0 font-weight-normal">Hatchling (Starter Plan)</h4>
                         </div>
                         <div class="card-body d-flex flex-column">
-                            <h1 class="card-title pricing-card-title">$39<small class="text-muted">/mo</small></h1>
-                            <p class="card-text text-left">Perfect for small programs or individual instructors.</p>
+                            <div class="row border-bottom border-primary mb-3">
+                                <div class="col-12 text-center mb-2">
+                                    <h2 class="card-title pricing-card-title old-price">&dollar;149<small class="text-muted">/mo</small></h2>
+                                </div>
+                                <div class="col-8 text-end">
+                                    <h1 class="card-title pricing-card-title new-price">&dollar;119<small class="text-muted">/mo</small></h1>
+                                </div>
+                                <div class="col-4 text-start">
+                                    <img src="images/LimitedOffer-1.png" class="img-fluid" alt="Limited Time Offer - Back to School Sale">
+                                </div>
+                                <div class="col-12 text-center mb-2">
+                                    <small class="text-secondary">Save <strong><span class="text-success">&dollar;360</span>/year</strong> with our Back to School Sale!</small>
+                                </div>
+                            </div>
+                            
+                            <p class="card-text text-left">Best for small schools and after-school programs</p>
                             <ul class="list-group list-group-flush mt-3 mb-4">
-                                <li class="list-group-item"><i class="bi bi-building"></i> One Location ($9/mo for each additional location)</li>
-                                <li class="list-group-item"><i class="bi bi-person-vcard-fill"></i> 10 Courses</li>
-                                <li class="list-group-item"><i class="bi bi-calendar-event-fill"></i> Class/Camp/Event Booking &amp; Management</li>
-                                <li class="list-group-item"><i class="bi bi-calendar-date-fill"></i> Auto Class Scheduler</li>
-                                <li class="list-group-item"><i class="bi bi-envelope-fill"></i> Email support</li>
+                                <li class="list-group-item"><i class="bi bi-people-fill"></i> Up to 250 student enrollments/year</li>
+                                <li class="list-group-item"><i class="bi bi-person-vcard-fill"></i> Unlimited Classes</li>
+                                <li class="list-group-item"><i class="bi bi-calendar-event-fill"></i> Effortless Course Creation</li>
+                                <li class="list-group-item"><i class="bi bi-person-vcard-fill"></i> Auto Class Scheduler <br />(skip holidays/specific times)</li>
+                                <li class="list-group-item"><i class="bi bi-person-vcard-fill"></i> Easy Enrollment for Parents & Students</li>
+                                <li class="list-group-item"><i class="bi bi-envelope-fill"></i> Email notifications to parents/students</li>
+                                <li class="list-group-item"><i class="bi bi-clipboard-data-fill"></i> Basic Reporting & Tracking</li>
+                                <li class="list-group-item"><i class="bi bi-envelope-fill"></i> Standard Email Support</li>
                                 <li class="list-group-item"><i class="bi bi-person-raised-hand"></i> Help center access</li>
                             </ul>
-                            <button type="button" class="mt-auto btn btn-lg btn-block btn-success"><i class="bi bi-person-fill-add"></i> Sign up</button>
+                        </div>
+                        <div class="card-footer text-body-secondary d-flex flex-column">
+                            <button type="button" class="mt-auto btn btn-lg btn-block btn-success">Sign up for <i class="bi bi-stars text-warning"></i> &dollar;119</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card mb-4 box-shadow border-success border-opacity-50">
+                        <div class="card-header text-white bg-success">
+                            <h4 class="my-0 font-weight-normal">Gosling (Growth Plan)</h4>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="row border-bottom border-primary mb-3">
+                                <div class="col-12 text-center mb-2">
+                                    <h2 class="card-title pricing-card-title old-price">&dollar;399<small class="text-muted">/mo</small></h2>
+                                </div>
+                                <div class="col-8 text-end">
+                                    <h1 class="card-title pricing-card-title new-price">&dollar;299<small class="text-muted">/mo</small></h1>
+                                </div>
+                                <div class="col-4 text-start">
+                                    <img src="images/LimitedOffer-1.png" class="img-fluid" alt="Limited Time Offer - Back to School Sale">
+                                </div>
+                                <div class="col-12 text-center mb-2">
+                                    <small class="text-secondary">Save <strong><span class="text-success">&dollar;1,200</span>/year</strong> with our Back to School Sale!</small>
+                                </div>
+                            </div>
+                            <p class="card-text text-left">Ideal for mid-sized schools or programs</p>
+                            <ul class="list-group list-group-flush mt-3 mb-4">
+                                <li class="list-group-item"><i class="bi bi-info-circle-fill"></i> All Hatchling Plan features, plus:</li>
+                                <li class="list-group-item"><i class="bi bi-file-earmark-arrow-up-fill"></i> Self-Service Bulk student uploads <br />(CSV/Excel Import/Export)</li>
+                                <li class="list-group-item"><i class="bi bi-people-fill"></i> Up to 2,000 student enrollments/year</li>
+                                <li class="list-group-item"><i class="bi bi-graph-up-arrow"></i> Comprehensive Reporting & Analytics</li>
+                                <li class="list-group-item"><i class="bi bi-credit-card-fill"></i> Seamless Payment & Registration Processing</li>
+                                <li class="list-group-item"><i class="bi bi-brush-fill"></i> Custom Branding Options</li>
+                                <li class="list-group-item"><i class="bi bi-person-raised-hand"></i> Help center access</li>
+                                <li class="list-group-item"><i class="bi bi-envelope-fill"></i> Priority Email & Phone Support</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-body-secondary d-flex flex-column">
+                            <button type="button" class="mt-auto btn btn-lg btn-block btn-success">Sign up for <i class="bi bi-stars text-warning"></i> &dollar;299</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <div class="card mb-4 box-shadow border-primary border-opacity-50">
                         <div class="card-header text-white bg-primary">
-                            <h4 class="my-0 font-weight-normal">Standard</h4>
+                            <h4 class="my-0 font-weight-normal">Gaggle (District)</h4>
                         </div>
                         <div class="card-body d-flex flex-column">
-                            <h1 class="card-title pricing-card-title">$199<small class="text-muted">/mo</small></h1>
-                            <p class="card-text text-left">Ideal for schools and small programs.</p>
+                            <div class="row border-bottom border-primary mb-3">
+                                <div class="col-12 text-center mb-2">
+                                    <h2 class="card-title pricing-card-title old-price">&dollar;6<small class="text-muted">/student/yr</small></h2>
+                                </div>
+                                <div class="col-7 text-end">
+                                    <h1 class="card-title pricing-card-title new-price">&dollar;5</h1><small class="text-muted">per student/yr</small>
+                                </div>
+                                <div class="col-5 text-start">
+                                    <img src="images/LimitedOffer-1.png" class="img-fluid" alt="Limited Time Offer - Back to School Sale">
+                                </div>
+                                <div class="col-12 text-center mb-2">
+                                    <small class="text-secondary">Save <strong><span class="text-success">18&percnt;</span>/year</strong> with our Back to School Sale!</small>
+                                </div>
+                            </div>
+                            <p class="card-text text-left">Medium to large school districts & multi-campus organizations</p>
                             <ul class="list-group list-group-flush mt-3 mb-4">
-                                <li class="list-group-item"><i class="bi bi-building"></i> 10 Locations</li>
-                                <li class="list-group-item"><i class="bi bi-palette-fill"></i> Branded Customer Portal</li>
-                                <li class="list-group-item"><i class="bi bi-person-vcard-fill"></i> Unlimited Courses</li>
-                                <li class="list-group-item"><i class="bi bi-calendar-event-fill"></i> Class/Camp/Event Booking &amp; Management</li>
-                                <li class="list-group-item"><i class="bi bi-calendar-date-fill"></i> Auto Class Scheduler</li>
-                                <li class="list-group-item"><i class="bi bi-cloud-arrow-up-fill"></i> OneRoster Data Upload</li>
-                                <li class="list-group-item"><i class="bi bi-envelope-fill"></i> Priority email support</li>
+                                <li class="list-group-item"><i class="bi bi-info-circle-fill"></i> All Hatchling &amp; Gosling features, plus:</li>
+                                <li class="list-group-item"><i class="bi bi-people-fill"></i> 2,000+ student enrollments/year</li>
+                                <li class="list-group-item"><i class="bi bi-person-check-fill"></i> Attendance Tracking</li>
+                                <li class="list-group-item"><i class="bi bi-tags-fill"></i> Custom Program Categories</li>
+                                <li class="list-group-item"><i class="bi bi-shield-lock-fill"></i> Secure &amp; Compliant Data Handling <br />HIPAA &amp; PCI Compliant</li>
+                                <li class="list-group-item"><i class="bi bi-plug-fill"></i> Advanced Integrations (SIS, CRM)</li>
+                                <li class="list-group-item"><i class="bi bi-person-badge-fill"></i> Dedicated Account Manager</li>
+                                <li class="list-group-item"><i class="bi bi-headset"></i> Premium Support &amp; Training</li>
                                 <li class="list-group-item"><i class="bi bi-person-raised-hand"></i> Help center access</li>
                             </ul>
-                            <button type="button" class="mt-auto btn btn-lg btn-block btn-success"><i class="bi bi-person-fill-add"></i> Sign up</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="card mb-4 box-shadow border-primary border-opacity-50">
-                        <div class="card-header text-white bg-primary">
-                            <h4 class="my-0 font-weight-normal">Premium</h4>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <h1 class="card-title pricing-card-title">Request Quote</h1>
-                            <p class="card-text text-left">For school districts and organizations with complex needs.</p>
-                            <ul class="list-group list-group-flush mt-3 mb-4">
-                                <li class="list-group-item"><i class="bi bi-building"></i> Unlimited Locations</li>
-                                <li class="list-group-item"><i class="bi bi-palette-fill"></i> Branded Customer Portal</li>
-                                <li class="list-group-item"><i class="bi bi-person-vcard-fill"></i> Unlimited Courses</li>
-                                <li class="list-group-item"><i class="bi bi-calendar-event-fill"></i> Class/Camp/Event Booking &amp; Management</li>
-                                <li class="list-group-item"><i class="bi bi-calendar-date-fill"></i> Auto Class Scheduler</li>
-                                <li class="list-group-item"><i class="bi bi-cloud-arrow-up-fill"></i> OneRoster Data Upload</li>
-                                <li class="list-group-item"><i class="bi bi-database-fill-down"></i> Classlink Integration</li>
-                                <li class="list-group-item"><i class="bi bi-envelope-fill"></i> Priority email support</li>
-                                <li class="list-group-item"><i class="bi bi-person-raised-hand"></i> Help center access</li>
-                            </ul>
-                            <button type="button" class="mt-auto btn btn-lg btn-block btn-info"><i class="bi bi-envelope-fill"></i> Contact us</button>
+                            <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><i class="bi bi-person-fill-add"></i> Request Quote</button>
                         </div>
                     </div>
                 </div>
@@ -352,7 +423,240 @@
         </div>
     </div>
 
-    <div class="b-divider"></div>-->
+    <div class="b-divider"></div>
+
+
+    <div class="container mt-5 py-5" id="addons">
+        <h1 class="text-center">Add-ons</h1>
+        <div class="row mt-4">
+            <div class="col-sm-12 col-md-4">
+                <div class="card mb-4 box-shadow border-primary border-opacity-50">
+                    <div class="card-header text-white bg-primary">
+                        <h4 class="my-0 font-weight-normal">Starter Plan Add-ons</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <ul class="list-group list-group-flush mt-3 mb-4">
+                            <li class="list-group-item"><strong>Payment Integration</strong> <span class="float-end">&dollar;9/month</span></li>
+                            <li class="list-group-item"><strong>Custom Branding</strong> (logo, colors, Domain/URL, etc.) <span class="float-end">&dollar;200/year</span></li>
+                            <li class="list-group-item"><strong>Initial Onboarding of Data</strong> (up to 250 students) <span class="float-end">&dollar;500 one-time</span></li>
+                            <li class="list-group-item"><strong>SMS Notifications</strong> <span class="float-end">&dollar;0.04/message</span></li>
+                            <li class="list-group-item"><strong>Virtual Training</strong> <span class="float-end">&dollar;500 one-time</span></li>
+                            <li class="list-group-item"><strong>Additional Students</strong> <span class="float-end">&dollar;5/student/year</span></li>
+                            <li class="list-group-item"><strong>Attendance Tracking</strong> <span class="float-end">&dollar;99/year</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="card mb-4 box-shadow border-success border-opacity-50">
+                    <div class="card-header text-white bg-success">
+                        <h4 class="my-0 font-weight-normal">Growth Plan Add-ons</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <ul class="list-group list-group-flush mt-3 mb-4">
+                            <li class="list-group-item"><strong>Payment Integration</strong> <span class="float-end">&dollar;9/month</span></li>
+                            <li class="list-group-item"><strong>Initial Onboarding of Data</strong> (up to 2,000 students) <br /><span class="float-end">&dollar;1,500 one-time</span></li>
+                            <li class="list-group-item"><strong>Advanced Integrations</strong> (SIS, CRM, API) <span class="float-end">&dollar;2,000/year</span></li>
+                            <li class="list-group-item"><strong>SMS Notifications</strong> <span class="float-end">&dollar;0.04/message</span></li>
+                            <li class="list-group-item"><strong>Virtual Training</strong> <span class="float-end">&dollar;500 one-time</span></li>
+                            <li class="list-group-item"><strong>HIPAA & PCI Compliant Data Security</strong> <span class="float-end">&dollar;1,000/year</span></li>
+                            <li class="list-group-item"><strong>BAA Signed Agreement</strong> <span class="float-end">&dollar;5,000/year</span></li>
+                            <li class="list-group-item"><strong>Additional Students</strong> <span class="float-end">&dollar;5/student/year</span></li>
+                            <li class="list-group-item"><strong>Attendance Tracking</strong> <span class="float-end">&dollar;99/year</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="card mb-4 box-shadow border-primary border-opacity-50">
+                    <div class="card-header text-white bg-primary">
+                        <h4 class="my-0 font-weight-normal">District Plan Add-ons</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <ul class="list-group list-group-flush mt-3 mb-4">
+                            <li class="list-group-item"><strong>Initial Onboarding of Data</strong> (up to 5,000 students, without SIS/CRM/API integration) <span class="float-end">&dollar;2,500 one-time</span></li>
+                            <li class="list-group-item"><strong>SMS Notifications</strong> <span class="float-end">&dollar;0.04/message</span></li>
+                            <li class="list-group-item"><strong>BAA Signed Agreement</strong> <span class="float-end">&dollar;5,000/year</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-divider"></div>
+
+    <div class="container-fluid py-5 bg-secondary" id="comparison">
+        <h1 class="text-center text-white">GammaGoose vs Competitors</h1>
+        <div class="row mt-4">
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-borderless table-striped">
+                                <thead>
+                                    <tr class="border-none m-0 p-0">
+                                        <th>&nbsp;</th>
+                                        <th class="p-0"><div class="rounded-top p-3 bg-os-orange">Best Choice</div></th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="table-dark"><strong>Feature</strong></td>
+                                        <td class="bg-os-orange"><strong>GammaGoose</strong></td>
+                                        <td class="table-dark"><strong>6 Crickets</strong></td>
+                                        <td class="table-dark"><strong>SchoolMint</strong></td>
+                                        <td class="table-dark"><strong>Eleyo</strong></td>
+                                        <td class="table-dark"><strong>Enrollease</strong></td>
+                                        <td class="table-dark"><strong>Amilia</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Target Users</td>
+                                        <td class="bg-os-orange"><strong>K-12, afterschool, districts</strong></td>
+                                        <td>Afterschool, districts</td>
+                                        <td>K-12 districts</td>
+                                        <td>Community ed</td>
+                                        <td>Private schools</td>
+                                        <td>Recreation/schools</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Online Class Registration</td>
+                                        <td class="bg-os-orange">✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Student Enrollment</td>
+                                        <td class="bg-os-orange">✅</td>
+                                        <td>➖</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>➖</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Waitlist</td>
+                                        <td class="bg-os-orange">✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>➖</td>
+                                        <td>✅</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Integrated Payments</td>
+                                        <td class="bg-os-orange">✅</td>
+                                        <td>✅</td>
+                                        <td>➖</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Multi-site / District Support</td>
+                                        <td class="bg-os-orange">✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>❌</td>
+                                        <td>✅</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Custom Branding</td>
+                                        <td class="bg-os-orange">✅ (Add-on)</td>
+                                        <td>✅ (Add-on)</td>
+                                        <td>✅ (Enterprise)</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HIPAA/PCI Hosting</td>
+                                        <td class="bg-os-orange">✅ (Add-on)</td>
+                                        <td>❌ (PCI only)</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>❌</td>
+                                        <td>✅ (PCI only)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobile Parent Experience</td>
+                                        <td class="bg-os-orange">✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Annual Pricing per Course Provider</strong></td>
+                                        <td class="bg-os-orange"><strong>&dollar;0</strong></td>
+                                        <td>&dollar;2,500</td>
+                                        <td>&dollar;10,000 - &dollar;20,000+</td>
+                                        <td>&dollar;9,000 - &dollar;16,000+</td>
+                                        <td>&dollar;5,000 - &dollar;7,000</td>
+                                        <td>&dollar;7,000 - &dollar;12,000+</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Per Location Annual Price</strong></td>
+                                        <td class="bg-os-orange"><strong>&dollar;0</strong></td>
+                                        <td>&dollar;2,500 - &dollar;3,500</td>
+                                        <td>&dollar;6,000 - &dollar;12,000+</td>
+                                        <td>&dollar;5,000 - &dollar;9,000+</td>
+                                        <td>&dollar;3,500 - &dollar;4,500</td>
+                                        <td>&dollar;4,000 - &dollar;7,000+</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Initial Setup Fees</strong></td>
+                                        <td class="bg-os-orange"><strong>&dollar;0</strong></td>
+                                        <td>&dollar;1,000+</td>
+                                        <td>&dollar;5,000+</td>
+                                        <td>&dollar;3,000+</td>
+                                        <td>&dollar;500+</td>
+                                        <td>&dollar;1,500+</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Estimated Annual Pricing for District <br />(5 Locations, 5,000 Students, 10 Courses)</strong></td>
+                                        <td class="bg-os-orange"><strong>&dollar;25,000</strong></td>
+                                        <td>&dollar;38,000</td>
+                                        <td>&dollar;60,000+</td>
+                                        <td>&dollar;50,000+</td>
+                                        <td>&dollar;25,000</td>
+                                        <td>&dollar;40,000+</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="border-none m-0 p-0">
+                                        <td>&nbsp;</td>
+                                        <td class="p-0"><div class="rounded-bottom p-3 bg-os-orange"><a href="#contact" class="btn btn-primary text-white w-100">Get Started <i class="bi bi-plus-circle-fill"></i></a></div></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="7" class="text-end"><strong>Note: Pricing is indicative and may vary based on specific requirements and negotiations.</strong></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="b-divider"></div>
+
 
     <div class="container-fluid py-1 bg-os-grey text-white" id="get-started">
         <div class="row py-5">
@@ -363,7 +667,75 @@
                 <h2>Ready to Simplify Your Enrollment Process?</h2>
                 <p>Whether you're managing a school district or an independent after-school program, GammaGoose provides the tools you need to make enrollment smooth, efficient, and stress-free.</p>
                 <p>Sign Up Today and Transform Your Enrollment Process!</p>
-                <a href="#contact" class="btn btn-os-orange btn-lg text-white">Get Started <i class="bi bi-plus-circle-fill"></i></a>
+
+                <div class="row">
+                    <form action="https://app.oakworks.io/api/get-started" method="post" id="get-started-form"></form>
+                        <div class="col-12">Tell us about your needs:</div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="organization-type" class="form-label">Organization Type</label>
+                                <select class="form-select" id="organization-type" name="organization-type">
+                                    <option value="">Select Organization Type</option>
+                                    <option value="school">School</option>
+                                    <option value="district">School District</option>
+                                    <option value="afterschool">Independent After-School Program</option>
+                                    <option value="tutor">Tutor</option>
+                                    <option value="non-profit">Non-Profit Organization</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="organization-size" class="form-label">Student Count</label>
+                                <select class="form-select" id="organization-size" name="organization-size">
+                                    <option value="">Select Student Count</option>
+                                    <option value="1-250">1-250 Students</option>
+                                    <option value="251-2000">251-2000 Students</option>
+                                    <option value="2001">2001+ Students</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="locations" class="form-label">Number of Locations</label>
+                                <input type="number" class="form-control" id="locations" name="locations" placeholder="Enter number of locations" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="courses" class="form-label">Number of Courses</label>
+                                <input type="number" class="form-control" id="courses" name="courses" placeholder="Enter number of courses" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="vendors" class="form-label">Number of Vendors</label>
+                                <input type="number" class="form-control" id="vendors" name="vendors" placeholder="Enter number of vendors" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="role" class="form-label">Your Role</label>
+                                <select class="form-select" id="role" name="role">
+                                    <option value="">Select Your Role</option>
+                                    <option value="admin">Administrator</option>
+                                    <option value="teacher">Teacher</option>
+                                    <option value="parent">Parent</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comments" class="form-label">Additional Comments</label>
+                                <textarea class="form-control" id="comments" name="comments" rows="3" placeholder="Any specific requirements or questions?"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <div class="cf-turnstile" data-sitekey="0x4AAAAAAA6nqL4FLWDyoJ1o"></div>
+                            </div>
+                            <div class="mb-3 d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="submit" class="btn btn-lg btn-primary">Submit <i class="bi bi-send-check-fill"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -373,10 +745,8 @@
     <div class="container p-5" id="contact">
         <div class="row">
             <div class="col-lg-6 col-12">
-                <h2>Get Started</h2>
+                <h2>Contact Us</h2>
                 <p class="h5">Have questions about GammaGoose?</p>
-                <p class="h5">Ready to get started?</p>
-                <p class="h5">Let us know about your needs, and we can provide a quote!</p>
                 <hr>
                 <form action="https://app.oakworks.io/api/contact" method="post" id="contact-form">
                     <div class="mb-3">
